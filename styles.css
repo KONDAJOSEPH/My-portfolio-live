@@ -1,4 +1,4 @@
-/* ===== Reset ===== */
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +10,6 @@
 }
 body{ background: #fff; color: #000; }
 
-/* ===== Header ===== */
 header{
     position: fixed;
     top: 1rem;
@@ -220,7 +219,7 @@ button.btn{ background: none; font: inherit; }
 }
 .contact-actions .btn{ padding: 0.5rem 1.1rem; font-size: 0.95rem; }
 
-/* ===== Footer ===== */
+
 .footer{
     padding: 1.5rem 12%;
     background: #1e1d1d;
@@ -228,7 +227,7 @@ button.btn{ background: none; font: inherit; }
     text-align: center;
 }
 
-/* ===== Scrollbar ===== */
+
 ::-webkit-scrollbar{ width: 5px; }
 ::-webkit-scrollbar-track{ background: rgb(219,219,219); }
 ::-webkit-scrollbar-thumb{
@@ -236,7 +235,7 @@ button.btn{ background: none; font: inherit; }
     border-radius: 2px;
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 992px){
     section{ padding: 7rem 6%; }
     .section-title{ font-size: 3rem; }
