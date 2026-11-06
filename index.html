@@ -3,208 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KONDA JOSEPH | Portfolio</title>
+    <title>Konda Joseph | Frontend Developer</title>
+    <meta name="description" content="Konda Joseph is a frontend developer in Kampala, Uganda, building web apps with JavaScript, HTML, CSS and Next.js. See projects, skills and how to get in touch.">
+    <meta name="author" content="Konda Joseph">
+    <meta name="theme-color" content="#232222">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Konda Joseph | Frontend Developer">
+    <meta property="og:description" content="Frontend developer in Kampala building clean, fast web applications. View my projects and get in touch.">
+    <meta property="og:image" content="Images/10.jpeg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23009dff'/%3E%3Cstop offset='1' stop-color='%23ff00ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3EKJ%3C/text%3E%3C/svg%3E">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+        /* Apply saved theme before paint to avoid a flash */
+        try {
+            var t = localStorage.getItem("theme");
+            if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Konda Joseph",
+        "jobTitle": "Frontend Developer",
+        "email": "mailto:kondajoseph019@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Kampala", "addressCountry": "UG" },
+        "sameAs": ["https://github.com/KondaJoseph"]
+    }
+    </script>
 </head>
 <body>
-   <header class="header">
-    <a href="#" class="logo" "><span>KONDA JOSEPH</span></a>
-    <ul class="nav-links">
-<li>
-    <a href="#about">About</a>
-</li>
-<li>
-    <a href="#experience">Experience</a>
-</li>
-<li>
-    <a href="#projects">Projects</a>
-</li>
-<li>
-    <a href="#contact">Contact</a>
-</li>
-</ul>
-<i class="fa-solid fa-bars" id="menu-icon"></i>
-<button class="Visit-btn"><a href="https://github.com/KondaJoseph" target="_blank">Visit Github</a></button>
-</header>
+    <a class="skip-link" href="#about">Skip to content</a>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
+    <header class="header">
+        <a href="#about" class="logo"><span>KONDA JOSEPH</span></a>
+        <nav aria-label="Main">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button type="button" id="menu-icon" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+        <a class="Visit-btn" href="https://github.com/KondaJoseph" target="_blank" rel="noopener">Visit GitHub</a>
+    </header>
 
-
-
-
-<section id="about" class="about">
-<div class="about-container">
-    <img src="Images/7.png" alt="Profile Picture" class="profile-pic">
-    <div class="info-box">
-<div class="text">
-<h3>Hi, I am</h3>
-<h1>KONDA JOSEPH</h1>
-<span>Frontend Developer</span>
-</div>
-<div class="btn-group">
-<a class="btn" href="#" download>Download CV</a>
-<a class="btn" href="#contact">Contact Me</a>
-</div>
-<div class="socials">
-    <a href="https://github.com/KondaJoseph" target="_blank" aria-label="GitHub"><i class="fa-brands fa-square-github"></i></a>
-    <a href="https://wa.me/256779493747" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-square-whatsapp"></i></a>
-    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="mailto:kondajoseph019@gmail.com" aria-label="Email"><i class="fa-brands fa-google"></i></a>
-</div>
-    </div>
-</div>
-</section>
-
-
-
-
-
-
-
-<section id="experience" class="experience">
-    <h2 class="section-title">Experience</h2>
-    <div class="experience-info">
-        <div class="grid">
-            <div class="grid-card">
-                <i class="fa-solid fa-code"></i>
-                <span>Web Development</span>
-                <h3>2 years</h3>
-                <p>Building responsive and interactive websites using modern technologies.</p> 
+    <main>
+        <!-- ===== Hero ===== -->
+        <section id="about" class="about">
+            <div class="about-container">
+                <img src="Images/10.jpeg" alt="Portrait of Konda Joseph" class="profile-pic" width="300" height="300">
+                <div class="info-box">
+                    <div class="text">
+                        <h3>Hi, I am</h3>
+                        <h1>KONDA JOSEPH</h1>
+                        <span class="role">Frontend Developer</span>
+                    </div>
+                    <p class="bio">I build clean, responsive web applications, from patient dashboards to money-transfer apps. Based in Kampala, Uganda, and open to new opportunities.</p>
+                    <div class="btn-group">
+                        <a class="btn btn-solid" href="Konda-Joseph-CV.pdf" download>Download CV</a>
+                        <a class="btn" href="#contact">Contact Me</a>
+                    </div>
+                    <div class="socials">
+                        <a href="https://github.com/KondaJoseph" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="#" id="linkedin-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="grid-card">
-                <i class="fa-solid fa-chart-column"></i>
-                <span>Data Analysis</span>
-                <h3>1 year</h3>
-                <p>Turning data into clear reports and visuals.</p>
-            </div>
-            <div class="grid-card">
-                <i class="fa-solid fa-laptop"></i>
-                <span>Web Design</span>
-                <h3>2 years</h3>
-                <p>Designing clean, modern and intuitive interfaces.</p>
-            </div>
-            <div class="grid-card">
-                <i class="fa-solid fa-diagram-project"></i>
-                <span>Project Management</span>
-                <h3>1 year</h3>
-                <p>Planning and delivering projects with teams.</p>
-            </div>
-        </div>
-        <img src="Images/7.png" alt="Profile Picture" class="profile-pic">
-    </div>
-</section>
+            <a href="#skills" class="scroll-hint" aria-label="Scroll to skills"><i class="fa-solid fa-chevron-down"></i></a>
+        </section>
 
-
-
-
-
-
-
-
-<section id="projects" class="projects">
-    <h2 class="section-title">Recent Projects</h2>
-    <div class="projects-grid">
-        <div class="projects-card">
-            <img src="Images/2.jpeg" alt="Goodhands project preview">
-            <h3>Good-Hands-Dental-Care</h3>
-            <p>Web app for managing appointments and patient records.</p>
-            <div class="btn-group">
-                 <a class="btn" href="https://dental-care-dashboard-kjlk.vercel.app" target="_blank">Live Demo</a>
-                <a class="btn" href="https://github.com/KondaJoseph/Good-Hands-Dental-Care" target="_blank">Git Repo</a>
-            </div>
-        </div>
-        <div class="projects-card">
-            <img src="Images/5.jpeg" alt="NAS Money Transfer preview">
-            <h3>NAS Money Transfer</h3>
-            <p>Secure app for sending and receiving money.</p>
-            <div class="btn-group">
-                <a class="btn" href="https://nas-money-transfer.vercel.app" target="_blank">Live Demo</a>
-                <a class="btn" href="https://github.com/KondaJoseph/NAS-Money-Transfer" target="_blank">Git Repo</a>
-            </div>
+        <!-- ===== Stats ===== -->
+        <div class="stats" aria-label="At a glance">
+            <div class="stat"><strong data-count="4">4</strong><span>Live projects</span></div>
+            <div class="stat"><strong data-count="2" data-suffix="+">2+</strong><span>Years coding</span></div>
+            <div class="stat"><strong data-count="7">7</strong><span>Core technologies</span></div>
+            <div class="stat"><strong>Kampala</strong><span>Based in Uganda</span></div>
         </div>
 
-        <div class="projects-card">
-            <img src="Images/3.jpeg" alt="Lecturer Management System preview">
-            <h3>Lecturer Management System</h3>
-            <p>System for managing lecturer details, courses and schedules.</p>
-            <div class="btn-group">
-                <a class="btn" href="https://lecturer-management-system.vercel.app" target="_blank">Live Demo</a>
-                <a class="btn" href="https://github.com/KondaJoseph/Lecturer-Management-System" target="_blank">Git Repo</a>
+        <!-- ===== Skills ===== -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+                    <ul class="chips">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Next.js</li>
+                        <li>Responsive design</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3><i class="fa-solid fa-database"></i> Data</h3>
+                    <ul class="chips">
+                        <li>Database design</li>
+                        <li>Database implementation</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3><i class="fa-solid fa-code-branch"></i> Workflow</h3>
+                    <ul class="chips">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Branching</li>
+                        <li>Vercel deployment</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <section id="experience" class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-info">
+                <div class="grid">
+                    <div class="grid-card">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Web Programming</span>
+                        <h3>2 years</h3>
+                        <p>Writing clean, efficient code for web applications that provide great user experiences using languages like JavaScript, HTML, and CSS.</p>
+                    </div>
+                    <div class="grid-card">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Web and App Development</span>
+                        <h3>1 year</h3>
+                        <p>Designing and developing web and mobile applications.</p>
+                    </div>
+                    <div class="grid-card">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>Databases</span>
+                        <h3>2 years</h3>
+                        <p>Designing and implementing database solutions.</p>
+                    </div>
+                    <div class="grid-card">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        <span>Software Engineering / Teamwork</span>
+                        <h3>1 year</h3>
+                        <p>Planning, using GitHub for version control and collaboration, working with branches, testing and deploying on Vercel without breaking other people's work.</p>
+                    </div>
+                </div>
+                <img src="Images/20.jpeg" alt="Developer working at a desk with code on screen" loading="lazy" width="400" height="400">
+            </div>
+        </section>
+
+        <!-- ===== Projects ===== -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="projects-grid">
+                <article class="projects-card">
+                    <img src="Images/15.jpeg" alt="Good Hands Dental Care project preview" loading="lazy">
+                    <h3>Good-Hands-Dental-Care</h3>
+                    <p>Web app for managing appointments and patient records.</p>
+                    <div class="btn-group">
+                        <a class="btn" href="https://dental-care-dashboard-kjlk.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                        <a class="btn" href="https://github.com/KondaJoseph/Good-Hands-Dental-Care" target="_blank" rel="noopener">Git Repo</a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <img src="Images/16.jpeg" alt="NAS Money Transfer project preview" loading="lazy">
+                    <h3>NAS Money Transfer</h3>
+                    <p>Secure app for sending and receiving money.</p>
+                    <div class="btn-group">
+                        <a class="btn" href="https://nas-next-app.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                        <a class="btn" href="https://github.com/KondaJoseph/nas-next-app" target="_blank" rel="noopener">Git Repo</a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <img src="Images/18.jpeg" alt="Nuba Hands relief and health tracker preview" loading="lazy">
+                    <h3>Nuba Hands-Relief and Health Tracker</h3>
+                    <p>A web application for tracking health metrics and providing relief services to underserved communities.</p>
+                    <div class="btn-group">
+                        <a class="btn" href="https://samaritan-aid.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                        <a class="btn" href="https://github.com/KondaJoseph/samaritan-aid" target="_blank" rel="noopener">Git Repo</a>
+                    </div>
+                </article>
+
+                <article class="projects-card">
+                    <img src="Images/17.jpeg" alt="NCA Safe Space project preview" loading="lazy">
+                    <h3>nca-safe-space-frontend</h3>
+                    <p>A secure, user-centered web platform that gives students a safe and confidential environment.</p>
+                    <div class="btn-group">
+                        <a class="btn" href="https://nca-safe-space-frontend.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+                        <a class="btn" href="https://github.com/KONDAJOSEPH/nca-safe-space-frontend" target="_blank" rel="noopener">Git Repo</a>
+                    </div>
+                </article>
+            </div>
+            <p class="more-link"><a href="https://github.com/KondaJoseph?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-lead">Have a project or a role in mind? Send a message and I will reply as soon as I can.</p>
+
+            <div class="contact-layout">
+                <div class="contact-container">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>kondajoseph019@gmail.com</p>
+                        <div class="contact-actions">
+                            <a class="btn" href="mailto:kondajoseph019@gmail.com">Send Email</a>
+                            <button type="button" class="btn copy-btn" data-copy="kondajoseph019@gmail.com">Copy</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>0779493747</p>
+                        <div class="contact-actions">
+                            <a class="btn" href="tel:+256779493747">Call</a>
+                            <a class="btn" href="https://wa.me/256779493747" target="_blank" rel="noopener">WhatsApp</a>
+                            <button type="button" class="btn copy-btn" data-copy="0779493747">Copy</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Kampala, Uganda</p>
+                        <div class="contact-actions">
+                            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Kampala" target="_blank" rel="noopener">Open in Maps</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <h3>Send a message</h3>
+                    <div class="field">
+                        <label for="cf-name">Your name</label>
+                        <input type="text" id="cf-name" name="name" autocomplete="name" required>
+                        <small class="error" data-for="cf-name"></small>
+                    </div>
+                    <div class="field">
+                        <label for="cf-email">Your email</label>
+                        <input type="email" id="cf-email" name="email" autocomplete="email" required>
+                        <small class="error" data-for="cf-email"></small>
+                    </div>
+                    <div class="field">
+                        <label for="cf-message">Message</label>
+                        <textarea id="cf-message" name="message" rows="5" required></textarea>
+                        <small class="error" data-for="cf-message"></small>
+                    </div>
+                    <button type="submit" class="btn btn-solid">Send message</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <a href="#about" class="footer-logo">KONDA JOSEPH</a>
+            <ul class="footer-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="footer-socials">
+                <a href="https://github.com/KondaJoseph" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:kondajoseph019@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
+        <p class="copyright">&copy; <span id="year"></span> KONDA JOSEPH. All rights reserved.</p>
+    </footer>
 
-        <div class="projects-card">
-            <img src="Images/4.jpeg" alt="nca-safe-space-frontend preview">
-            <h3>nca-safe-space-frontend</h3>
-            <p>Is a secure user-centered web platform designed to provide a safe and confidential environment for students.</p>
-            <div class="btn-group">
-                <a class="btn" href="https://nca-safe-space-frontend.vercel.app" target="_blank">Live Demo</a>
-                <a class="btn" href="https://github.com/KONDAJOSEPH/nca-safe-space-frontend" target="_blank">Git Repo</a>
-
-            </div>
-            
-            
-            
-            
-            
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-<section id="contact" class="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="contact-container">
-        <div class="contact-card">
-            <i class="fa-solid fa-envelope"></i>
-            <h3>Email</h3>
-            <p>kondajoseph019@gmail.com</p>
-            <div class="contact-actions">
-                <a class="btn" href="mailto:kondajoseph019@gmail.com">Send Email</a>
-                <button type="button" class="btn copy-btn" data-copy="kondajoseph019@gmail.com">Copy</button>
-            </div>
-        </div>
-
-        <div class="contact-card">
-            <i class="fa-solid fa-phone"></i>
-            <h3>Phone</h3>
-            <p>0779493747</p>
-            <div class="contact-actions">
-                <a class="btn" href="tel:+256779493747">Call</a>
-                <a class="btn" href="https://wa.me/256779493747" target="_blank" rel="noopener">WhatsApp</a>
-                <button type="button" class="btn copy-btn" data-copy="0779493747">Copy</button>
-            </div>
-        </div>
-
-        <div class="contact-card">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>Location</h3>
-            <p>Kampala</p>
-            <div class="contact-actions">
-                <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Kampala" target="_blank" rel="noopener">Open in Maps</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-<footer class="footer">
-    <p style="font-style:italic ;">&copy; <span id="year"></span> KONDA JOSEPH. All rights reserved.</p>
-</footer>
-
-
-
+    <button type="button" class="to-top" id="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
