@@ -192,8 +192,9 @@ button.btn{ background: none; font: inherit; font-weight: 500; }
 .about{ display: flex; align-items: center; justify-content: center; }
 .about-container{ display: flex; align-items: center; justify-content: center; gap: 8rem; }
 .about .profile-pic{
-    width: 30vh;
-    min-width: 200px;
+    width: clamp(320px, 55vh, 500px);
+    max-width: 100%;
+    min-width: 0;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -254,6 +255,7 @@ button.btn{ background: none; font: inherit; font-weight: 500; }
 }
 .skill-group h3{ font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; }
 .skill-group h3 i{ color: var(--accent); }
+.skill-group .bio{ margin-bottom: 1rem; }
 .chips{ display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .chips li{
     padding: 0.3rem 0.9rem;
